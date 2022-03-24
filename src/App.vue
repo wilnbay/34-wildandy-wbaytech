@@ -1,28 +1,46 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+<v-app>
+   <HeaderComponents/>
+ <v-main>
+    <JumbotronComponents />
+    <BodyComponents/>
+     <CardComponents/>
+      <AboutComponents/>
+      <FormComponents/>
+ </v-main>
+ <FooterComponents/>
+</v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HeaderComponents from '@/components/HeaderComponents.vue';
+import JumbotronComponents from './components/JumbotronComponents.vue';
+import BodyComponents from '@/components/BodyComponents.vue';
+import CardComponents from './components/CardComponents.vue';
+import AboutComponents from './components/AboutComponents.vue';
+import FormComponents from './components/FormComponents.vue';
+
+import FooterComponents from './components/FooterComponents.vue';
+
+
 
 export default {
   name: 'App',
+
   components: {
-    HelloWorld
-  }
-}
+     HeaderComponents, 
+     JumbotronComponents,
+     BodyComponents,
+     CardComponents,
+     AboutComponents,
+     FormComponents,
+     FooterComponents,
+   
+  },
+
+  data: () => ({
+    //
+  }),
+};
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
