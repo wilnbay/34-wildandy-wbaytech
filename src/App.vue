@@ -2,11 +2,10 @@
 <v-app>
    <HeaderComponents/>
  <v-main>
-    <JumbotronComponents />
-    <BodyComponents/>
+     <JumbotronComponents/>
+     <BodyComponents/>
      <CardComponents/>
-      <AboutComponents/>
-      <FormComponents/>
+     <AboutComponents/>
  </v-main>
  <FooterComponents/>
 </v-app>
@@ -18,8 +17,6 @@ import JumbotronComponents from './components/JumbotronComponents.vue';
 import BodyComponents from '@/components/BodyComponents.vue';
 import CardComponents from './components/CardComponents.vue';
 import AboutComponents from './components/AboutComponents.vue';
-import FormComponents from './components/FormComponents.vue';
-
 import FooterComponents from './components/FooterComponents.vue';
 
 
@@ -33,7 +30,6 @@ export default {
      BodyComponents,
      CardComponents,
      AboutComponents,
-     FormComponents,
      FooterComponents,
    
   },
